@@ -83,7 +83,7 @@ const App = () => {
         </section>
 
         {/* Core Features Grid */}
-        <section className="py-20 mb-20">
+        <section className="pt-20 pb-10 mb-20">
           <h2 className="text-3xl font-bold text-center mb-16">Features </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
             {/* Bookmark Share Snap Speak */}
@@ -92,7 +92,7 @@ const App = () => {
                 <img 
                   src="/images/screenshots/share-options.png" 
                   alt="Share Options" 
-                  className="w-full rounded-xl shadow-lg mb-10 px-6 pt-10 bg-white"
+                  className="w-full rounded-3xl shadow-lg mb-10 px-6 pt-10 bg-white"
                 />
                 <div className="absolute inset-x-0 text-center">
                   <h3 className="text-2xl font-bold">Bookmark, Share </h3>
@@ -107,7 +107,7 @@ const App = () => {
                 <img 
                   src="/images/screenshots/category-navigation.png" 
                   alt="Category Navigation" 
-                  className="w-full rounded-xl shadow-lg mb-10 px-6 pt-10 bg-white"
+                  className="w-full rounded-3xl shadow-lg mb-10 px-6 pt-10 bg-white"
                 />
                 <div className="absolute inset-x-0 text-center mb-0">
                   <h3 className="text-2xl font-bold">Easy Category</h3>
@@ -122,7 +122,7 @@ const App = () => {
                 <img 
                   src="/images/screenshots/search.png" 
                   alt="Poem Search" 
-                  className="w-full rounded-xl shadow-lg mb-10 px-6 pt-10 bg-white"
+                  className="w-full rounded-3xl shadow-lg mb-10 px-6 pt-10 bg-white"
                 />
                 <div className="absolute inset-x-0 text-center">
                   <h3 className="text-2xl font-bold">Effective</h3>
@@ -135,54 +135,83 @@ const App = () => {
 
         
         {/* Personalization Features */}
-        <section className="py-20 bg-white rounded-3xl px-8 shadow-sm">
-          <h2 className="text-3xl font-bold text-center mb-16">Personalized Reading Experience</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="space-y-6">
-              <img 
-                src="/images/screenshots/random-poem.png" 
-                alt="Theme Options" 
-                className="h-[300px] rounded-xl shadow-lg"
-              />
-              <h3 className="text-xl font-bold">Random Poems</h3>
-              <p className="text-gray-600">
-                Choose from Colorful, Monochrome, or Dark theme to suit your reading preference.
-              </p>
-            </div>
-            <div className="space-y-6">
-              <img 
-                src="/images/screenshots/daily-notifications.png" 
-                alt="Accessibility Features" 
-                className="h-[300px] rounded-xl shadow-lg"
-              />
-              <h3 className="text-xl font-bold">Daily Inspiration</h3>
-              <p className="text-gray-600">
-                Enjoy text-to-speech on poems and articles, adjustable font scaling, and progress tracking.
-              </p>
-            </div>
-            <div className="space-y-6">
-              <img 
-                src="https://placehold.co/800x500/e2e8f0/475569?text=Theme+Options" 
-                alt="Theme Options" 
-                className="w-full rounded-xl shadow-lg"
-              />
-              <h3 className="text-xl font-bold">Three Beautiful Themes</h3>
-              <p className="text-gray-600">
-                Choose from Colorful, Monochrome, or Dark theme to suit your reading preference.
-              </p>
-            </div>
-            <div className="space-y-6">
-              <img 
-                src="https://placehold.co/800x500/e2e8f0/475569?text=Accessibility+Features" 
-                alt="Accessibility Features" 
-                className="w-full rounded-xl shadow-lg"
-              />
-              <h3 className="text-xl font-bold">Accessibility First</h3>
-              <p className="text-gray-600">
-                Enjoy text-to-speech on poems and articles, adjustable font scaling, and progress tracking.
-              </p>
+        <section className="py-20 space-y-8">
+          {/* Random Poems Section */}
+          <div className="bg-gray-200 rounded-3xl px-20 pt-10 shadow-sm">
+            <div className="flex flex-col md:flex-row items-center gap-12">
+              <div className="md:w-1/3">
+                <img 
+                  src="/images/screenshots/random-poem.png" 
+                  alt="Random Poems Feature" 
+                  className="w-full max-w-[350px]"
+                />
+              </div>
+              <div className="md:w-2/3 space-y-4">
+                <h3 className="text-4xl font-bold">Random Poems</h3>
+                <p className="text-gray-600 text-lg">
+                  Discover new poems daily with our random poem feature. Perfect for daily inspiration and learning.
+                </p>
+              </div>
             </div>
           </div>
+
+          {/* Daily Inspiration Section */}
+          <div className="bg-gray-200 rounded-3xl px-20 shadow-sm">
+            <div className="flex flex-col md:flex-row items-center gap-12">
+              <div className="md:w-2/3 space-y-4">
+                <h3 className="text-4xl font-bold">Daily Inspiration</h3>
+                <p className="text-gray-600 text-lg">
+                  Get daily notifications with handpicked poems to start your day with Tamil wisdom.
+                </p>
+              </div>
+              <div className="md:w-1/3">
+                <img 
+                  src="/images/screenshots/daily-notifications.png" 
+                  alt="Daily Notifications" 
+                  className="w-full max-w-[450px]"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Beautiful Themes Section */}
+          <div className="bg-white rounded-3xl px-8 py-12 shadow-sm">
+            <div className="flex flex-col md:flex-row items-center gap-12">
+              <div className="md:w-1/3">
+                <img 
+                  src="/images/screenshots/theme-options.png" 
+                  alt="Theme Options" 
+                  className="w-full max-w-[200px] "
+                />
+              </div>
+              <div className="md:w-2/3 space-y-4">
+                <h3 className="text-2xl font-bold">Beautiful Themes</h3>
+                <p className="text-gray-600 text-lg">
+                  Choose from light, dark, and sepia themes to customize your reading experience.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Accessibility Section */}
+          <div className="bg-white rounded-3xl px-8 py-12 shadow-sm">
+            <div className="flex flex-col md:flex-row items-center gap-12">
+              <div className="md:w-1/3">
+                <img 
+                  src="/images/screenshots/accessibility.png" 
+                  alt="Accessibility Features" 
+                  className="w-full max-w-[250px] mx-auto rounded-3xl shadow-lg"
+                />
+              </div>
+              <div className="md:w-2/3 space-y-4">
+                <h3 className="text-2xl font-bold">Accessibility First</h3>
+                <p className="text-gray-600 text-lg">
+                  Adjustable text size, high contrast mode, and VoiceOver support for all users.
+                </p>
+              </div>
+            </div>
+          </div>
+
         </section>
         
       </main>

@@ -6,7 +6,7 @@ const App = () => {
       {/* Simple Header */}
       <header className="bg-transparent border-b border-gray-100">
         <nav className="max-w-[1024px] mx-auto px-4 py-6 flex items-center justify-between">
-          <h1 className="text-2xl font-bold font-quicksand flex items-center gap-5">
+          <h1 className="text-2xl font-bold font-quicksand flex items-center gap-3">
             <img src="/images/icons/logo.png" alt="TamilLit Logo" className="w-12" />
             Tamil Lit
           </h1>
@@ -48,9 +48,8 @@ const App = () => {
               Lovers
               </h2>
             <p className="text-lg text-gray-600">
-            A <span className="text-orange-600">free iOS app</span> offering rich insights into Tamil literature, providing a comprehensive gateway 
-            to the timeless beauty of classical <span className="text-orange-600">Tamil poems</span> and their <span className="text-orange-600">interpretations</span>. Explore, learn, and 
-            immerse yourself in the profound world of Tamil literary treasures.
+            <span className="text-orange-600">Tamil Lit</span> is a <span className="text-orange-600">free</span> iOS app offering rich insights into Tamil literature, providing a comprehensive gateway 
+            to the timeless beauty of classical <span className="text-orange-600">Tamil poems</span> and their interpretations.             
             </p>
             {/* App Store Button */}
             <div className="pt-4">
@@ -266,9 +265,16 @@ const App = () => {
         
       </main>
 
-      <footer className="bg-white border-t border-gray-100 py-8 mt-16">
+      <footer className=" border-t border-gray-100 py-8 mt-5">
         <div className="max-w-[1024px] mx-auto px-4 text-center text-gray-600">
-          <p>&copy; 2024 TamilLit. All rights reserved.</p>
+          <div className="space-y-4">
+            <div className="flex justify-center space-x-6">
+              <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target='_blank' className="text-gray-600 hover:text-orange-600">Terms of Use</a>
+              <a href="mailto:selvarajan2006@gmail.com" target='_blank' className="text-gray-600 hover:text-orange-600">Contact</a>
+
+              <p className="text-sm">Built with ❤️ by <a href="https://www.linkedin.com/in/selvarajan-t" target='_blank' className="hover:text-orange-600">Selvarajan Thangavel</a></p>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

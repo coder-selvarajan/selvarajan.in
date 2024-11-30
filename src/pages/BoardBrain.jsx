@@ -1,4 +1,4 @@
-const TamilLit = () => {
+const BoardBrain = () => {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900">
       <main className="max-w-[1024px] mx-auto px-4">
@@ -12,22 +12,22 @@ const TamilLit = () => {
           {/* Left Column - Text Content */}
           <div className="w-full md:w-1/2 text-left space-y-8">
             <h1 className="text-xl font-bold font-quicksand flex items-center gap-3 py-2 bg-gray-200 rounded-lg px-4 w-fit">
-                <img src="/images/icons/logo.png" alt="TamilLit Logo" className="w-10" />
-                Tamil Lit
+                <img src="/images/boardbrain/logo-rounded.png" alt="TamilLit Logo" className="w-8" />
+                Board Brain
             </h1>
             <h2 className="text-4xl leading-tight font-bold tracking-tight">
               App made for <br/>
-              <span className="text-orange-600 font-bold">Tamil Literature</span>
+              <span className="text-yellow-500 text-5xl font-bold">CHESS</span>
               <br/>
-              Lovers
+              Leaners
               </h2>
             <p className="text-lg text-gray-600">
-            <span className="text-orange-600">Tamil Lit</span> is a <span className="text-orange-600">free</span> iOS app offering rich insights into Tamil literature, providing a comprehensive gateway 
-            to the timeless beauty of classical <span className="text-orange-600">Tamil poems</span> and their interpretations.             
+            <span className="text-yellow-600">Board Brain</span> is a <span className="text-yellow-600">free</span> iOS app designed to help you improve your chess vision. 
+            It offers interactive games and exercises that focus on mastering chessboard coordinates, understanding piece movement, and recognizing square colors. 
             </p>
             {/* App Store Button */}
             <div className="pt-4">
-              <a href="https://apps.apple.com/in/app/tamil-lit/id6476827222" target='_blank' className="w-[200px] hover:opacity-80 transition-opacity inline-block">
+              <a href="https://apps.apple.com/in/app/board-brain/id6482852806" target='_blank' className="w-[200px] hover:opacity-80 transition-opacity inline-block">
                 <img 
                   src="/app_store_badge.svg" 
                   alt="Download on App Store" 
@@ -40,54 +40,22 @@ const TamilLit = () => {
           {/* Right Column - App Preview */}
           <div className="w-full md:w-1/2">
             <img 
-              src="/images/tamillit/Tamil-lit-home.png" 
+              src="/images/boardbrain/01.png" 
               alt="TamilLit App Interface" 
               className="w-full max-w-[700px] mx-auto rounded-3xl"
             />
           </div>
         </section>
 
-        {/* Literature Collection Section */}
-        <section className="pt-16 pb-5 bg-gray-200 rounded-3xl px-8 shadow-sm">
-          <h2 className="text-4xl font-bold text-center mb-16">10 Renowned Literature Books</h2>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mb-12">
-            {[
-              { en: 'Thirukural', ta: 'திருக்குறள்' },
-              { en: 'Naaladiyar', ta: 'நாலடியார்' },
-              { en: 'Athichudi', ta: 'ஆத்திசூடி' },
-              { en: 'Pazhamozhi Naanuru', ta: 'பழமொழி நானூறு' },
-              { en: 'Acharakovai', ta: 'ஆசாரக்கோவை' },
-              { en: 'Inna Naarpathu', ta: 'இன்னா நாற்பது' },
-              { en: 'Iniyavai Naarpathu', ta: 'இனியவை நாற்பது' },
-              { en: 'Muthumozhi Kanchi', ta: 'முதுமொழிக் காஞ்சி' },
-              { en: 'Thirikadukam', ta: 'திரிகடுகம்' },
-              { en: 'Naanmanikadikai', ta: 'நான்மணிக்கடிகை' }
-            ].map((book) => (
-              <div key={book.en} className="py-1 px-4 rounded-xl text-center">
-                <img 
-                  src={`/images/icons/${book.en.toLowerCase()}.png`}
-                  alt={book.en}
-                  className="w-full bg-gray-50 rounded-2xl shadow-md mb-5 p-6"
-                />
-                <p className="font-medium text-gray-600">{book.ta}</p>
-                <p className="font-light text-gray-500">({book.en})</p>
-              </div>
-            ))}
-          </div>
-          {/* <p className="text-center text-gray-600">
-            With multiple explanations to deepen your understanding
-          </p> */}
-        </section>
-
         {/* Core Features Grid */}
-        <section className="pt-20 pb-10 mb-20">
-          <h2 className="text-4xl font-bold text-center mb-16">Features </h2>
+        <section className="pt-10 pb-10 mb-20">
+          <h2 className="text-4xl font-bold text-center mb-16">Training Modules </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
             {/* Bookmark Share Snap Speak */}
             <div className="space-y-6">
               <div className="relative">
                 <img 
-                  src="/images/tamillit/share-options.png" 
+                  src="/images/boardbrain/02.png" 
                   alt="Share Options" 
                   className="w-full rounded-3xl shadow-lg mb-10 px-6 pt-10 bg-gray-200"
                 />
@@ -102,7 +70,7 @@ const TamilLit = () => {
             <div className="space-y-6">
               <div className="relative">
                 <img 
-                  src="/images/tamillit/category-navigation.png" 
+                  src="/images/boardbrain/03.png" 
                   alt="Category Navigation" 
                   className="w-full rounded-3xl shadow-lg mb-10 px-6 pt-10 bg-gray-200"
                 />
@@ -117,7 +85,7 @@ const TamilLit = () => {
             <div className="space-y-6">
               <div className="relative">
                 <img 
-                  src="/images/tamillit/search.png" 
+                  src="/images/boardbrain/04.png" 
                   alt="Poem Search" 
                   className="w-full rounded-3xl shadow-lg mb-10 px-6 pt-10 bg-gray-200"
                 />
@@ -258,4 +226,4 @@ const TamilLit = () => {
   );
 };
 
-export default TamilLit; 
+export default BoardBrain; 

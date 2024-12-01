@@ -1,9 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import TamilLit from './pages/TamilLit';
 import BoardBrain from './pages/BoardBrain';
+import VaiRajaVai from './pages/VaiRajaVai';
+import VocabularyBuddy from './pages/VocabularyBuddy';
 
 const App = () => {
   return (
@@ -14,6 +16,9 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/tamil-lit" element={<TamilLit />} />
           <Route path="/board-brain" element={<BoardBrain />} />
+          <Route path="/vai-raja-vai" element={<VaiRajaVai />} />
+          <Route path="/vocabulary-buddy" element={<VocabularyBuddy />} />
+          <Route path="*" element={<Home />} />
         </Routes>
       </div>
     </Router>

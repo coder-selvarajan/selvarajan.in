@@ -29,7 +29,7 @@ const BoardBrain = () => {
             <div className="pt-4 flex gap-8">
               <a href="https://apps.apple.com/in/app/board-brain/id6482852806" target='_blank' className="w-[200px] hover:opacity-80 transition-opacity inline-block">
                 <img 
-                  src="/app_store_badge.svg" 
+                  src="/images/app_store_badge.svg" 
                   alt="Download on App Store" 
                   className="w-[200px]"
                 />

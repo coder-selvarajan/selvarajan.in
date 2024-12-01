@@ -56,22 +56,22 @@ const Home = () => {
 
           <div className="flex justify-center gap-8 text-gray-600">
             <div className="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
               </svg>
-              <span className="text-lg">Developer</span>
+              <span className="text-md">Developer</span>
             </div>
             <div className="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" />
               </svg>
-              <span className="text-lg">Artist</span>
+              <span className="text-md">Artist</span>
             </div>
             <div className="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
               </svg>
-              <span className="text-lg">Seeker</span>
+              <span className="text-md">Seeker</span>
             </div>
           </div>
         </div>
@@ -79,61 +79,242 @@ const Home = () => {
 
       {/* Projects Section */}
       <section className="py-12">
-        <h2 className="text-5xl font-quicksand font-bold text-center mb-12">My Apps</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <Link to="/tamil-lit" className="group h-full" onClick={() => window.scrollTo(0, 0)}>
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col">
-              <div className="p-12 flex-1">
-                <img 
-                  src="/images/tamillit/Tamil-lit-home.png" 
-                  alt="Tamil Lit App" 
-                  className="w-full object-contain" 
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 group-hover:text-orange-600 transition-colors">Tamil Lit</h3>
-                <p className="text-gray-600">
-                  An iOS app for Tamil literature enthusiasts, featuring classical Tamil poems and their interpretations.
-                </p>
+        <h2 className="text-4xl font-quicksand font-bold text-center mb-12">My Apps</h2>
+        <div className="grid grid-cols-1 gap-12">
+          {/* Full-width Tamil Lit Box */}
+          <Link to="/tamil-lit" className="group" onClick={() => window.scrollTo(0, 0)}>
+            <div className="bg-gray-200 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full">
+              <div className="flex flex-col md:flex-row">
+                <div className="md:w-1/2 px-16 py-14">
+                  <img 
+                    src="/images/tamillit/Tamil-lit-home.png" 
+                    alt="Tamil Lit App" 
+                    className="w-full object-contain" 
+                  />
+                </div>
+                <div className="md:w-1/2 p-10 flex flex-col justify-center">
+                  <h3 className="text-3xl font-bold group-hover:text-orange-600 transition-colors flex items-center justify-between">
+                    Tamil Lit
+                    <div className="flex gap-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 fill-gray-400" viewBox="0 0 384 512"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+                    </div>
+                  </h3>
+                  <p className="pb-2">
+                    <span className="text-sm text-gray-500">Released in Sep 2024</span>
+                  </p>
+                  <p className="text-lg text-gray-600 pt-5">
+                  Tamil Lit is a free iOS app offering rich insights into Tamil literature, providing a comprehensive gateway 
+                  to the timeless beauty of classical Tamil poems and their interpretations.
+                  <br/><br/>
+                  <span className="text-md text-gray-500">Technologies used: SwiftUI & Core Data</span>
+                  </p>
+                  
+                  <div className="flex items-center gap-4 mt-4">
+                    <Link to="/tamil-lit" className="text-lg text-orange-600 hover:text-orange-700" onClick={() => window.scrollTo(0, 0)}>More details →</Link>
+                  </div>
+                </div>
               </div>
             </div>
           </Link>
 
-          <Link to="/board-brain" className="group h-full" onClick={() => window.scrollTo(0, 0)}>
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col">
-              <div className="p-12 flex-1">
-                <img 
-                  src="/images/boardbrain/01.png" 
-                  alt="BoardBrain App"
-                  className="w-full object-contain"
-                />
+          {/* Grid for remaining apps */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <Link to="/board-brain" className="group h-full" onClick={() => window.scrollTo(0, 0)}>
+              <div className="bg-gray-200 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col">
+                <div className="px-7 pt-10 pb-1 flex-1">
+                  <img 
+                    src="/images/boardbrain/01.png" 
+                    alt="BoardBrain App"
+                    className="w-full object-contain"
+                  />
+                </div>
+                <div className="p-7">
+                  <h3 className="text-2xl font-bold group-hover:text-orange-600 transition-colors flex items-center justify-between">
+                    Board Brain
+                    <div className="flex gap-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 fill-gray-400" viewBox="0 0 384 512"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+                    </div>
+                  </h3>
+                  <p className="pb-2">
+                    <span className="text-sm text-gray-500">Released in Jul 2024</span>
+                  </p>
+                  <p className="text-gray-600 pt-2">
+                    An iOS app for chess lovers, offers interactive games and exercises to improve their chess vision.
+                    <br/><br/>
+                    <span className="text-sm text-gray-500">Technology: SwiftUI</span>
+                  </p>
+                  <div className="flex items-center gap-4 mt-4">
+                    <Link to="/board-brain" className="text-sm text-orange-600 hover:text-orange-700">More details →</Link>
+                  </div>
+                </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 group-hover:text-orange-600 transition-colors">BoardBrain</h3>
-                <p className="text-gray-600">
-                  An iOS app for chess lovers, offers interactive games and exercises to improve their chess vision.
-                </p>
-              </div>
-            </div>
-          </Link>
+            </Link>
 
-          {/* <Link to="/vocabulary-buddy" className="group h-full">
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col">
-              <div className="p-12 flex-1">
-                <img 
-                  src="/images/tamillit/Tamil-lit-home.png" 
-                  alt="Vocabulary Buddy App"
-                  className="w-full object-contain"
-                />
+            <Link to="/vai-raja-vai" className="group h-full" onClick={() => window.scrollTo(0, 0)}>
+              <div className="bg-gray-200 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col">
+                <div className="px-7 pt-10 pb-1 flex-1">
+                  <img 
+                    src="/images/vairajavai/home2.png" 
+                    alt="Vai Raja Vai App"
+                    className="w-full object-contain"
+                  />
+                </div>
+                <div className="p-7">
+                  <h3 className="text-2xl font-bold group-hover:text-orange-600 transition-colors flex items-center justify-between">
+                    Vai Raja Vai
+                    <div className="flex gap-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 fill-gray-400" viewBox="0 0 384 512"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 fill-gray-400" viewBox="0 0 448 512"><path d="M89.6 204.5v115.8c0 15.4-12.1 27.7-27.5 27.7-15.3 0-30.1-12.4-30.1-27.7V204.5c0-15.1 14.8-27.5 30.1-27.5 15.1 0 27.5 12.4 27.5 27.5zm10.8 157c0 16.4 13.2 29.6 29.6 29.6h19.9l.3 61.1c0 36.9 55.2 36.6 55.2 0v-61.1h37.2v61.1c0 36.7 55.5 36.8 55.5 0v-61.1h20.2c16.2 0 29.4-13.2 29.4-29.6V182.1H100.4v179.4zm248-189.1H99.3c0-42.8 25.6-80 63.6-99.4l-19.1-35.3c-2.8-4.9 4.3-8 6.7-3.8l19.4 35.6c34.9-15.5 75-14.7 108.3 0L297.5 34c2.5-4.3 9.5-1.1 6.7 3.8L285.1 73c37.7 19.4 63.3 56.6 63.3 99.4zm-170.7-55.5c0-5.7-4.6-10.5-10.5-10.5-5.7 0-10.2 4.8-10.2 10.5s4.6 10.5 10.2 10.5c5.9 0 10.5-4.8 10.5-10.5zm113.4 0c0-5.7-4.6-10.5-10.2-10.5-5.9 0-10.5 4.8-10.5 10.5s4.6 10.5 10.5 10.5c5.6 0 10.2-4.8 10.2-10.5zm94.8 60.1c-15.1 0-27.5 12.1-27.5 27.5v115.8c0 15.4 12.4 27.7 27.5 27.7 15.4 0 30.1-12.4 30.1-27.7V204.5c0-15.4-14.8-27.5-30.1-27.5z"/></svg>
+                    </div>
+                  </h3>
+                  <p className="pb-2">
+                    <span className="text-sm text-gray-500">Released in Feb 2023</span>
+                  </p>
+                  <p className="text-gray-600 pt-2">
+                    A mobile app that helps friends and family split money while enjoying card games together seamlessly.
+                    <br/><br/>
+                    <span className="text-sm text-gray-500">Technology: Flutter & Isar DB</span>
+                  </p>
+                  <div className="flex items-center gap-4 mt-4">
+                    <Link to="/vai-raja-vai" className="text-sm text-orange-600 hover:text-orange-700" >More details →</Link>
+                  </div>
+                </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 group-hover:text-orange-600 transition-colors">Vocabulary Buddy</h3>
-                <p className="text-gray-600">
-                  An interactive vocabulary learning app with spaced repetition and contextual examples.
-                </p>
+            </Link>
+
+            <Link to="/vocabulary-buddy" className="group h-full" onClick={() => window.scrollTo(0, 0)}>
+              <div className="bg-gray-200 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col">
+                <div className="px-7 pt-10 pb-1 flex-1">
+                  <img 
+                    src="/images/vocabularybuddy/home.png" 
+                    alt="Vocabulary Buddy App"
+                    className="w-full object-contain"
+                  />
+                </div>
+                <div className="p-7">
+                  <h3 className="text-2xl font-bold group-hover:text-orange-600 transition-colors flex items-center justify-between">
+                    Vocabulary Buddy
+                    <div className="flex gap-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 fill-gray-400" viewBox="0 0 384 512"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+                    </div>
+                  </h3>
+                  <p className="pb-2">
+                    <span className="text-sm text-gray-500">Under Development</span>
+                  </p>
+                  <p className="text-gray-600 pt-2">
+                    An iOS app designed for English learners of all levels to improve their vocabulary skills effortlessly.
+                    <br/><br/>
+                    <span className="text-sm text-gray-500">Technology: SwiftUI & Core data</span>
+                  </p>
+                  <div className="flex items-center gap-4 mt-4">
+                    <Link to="/vocabulary-buddy" className="text-sm text-orange-600 hover:text-orange-700">More details →</Link>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+        
+      </section>
+
+      <section className="py-16">
+        <h2 className="text-4xl font-quicksand font-bold mb-4 text-center">My Recent Artworks</h2>
+        {/* <p className="text-center text-gray-600 mb-12">Goto <a href="https://art.selvarajan.in" target="_blank" className="text-orange-600 hover:text-orange-700">art.selvarajan.in</a> to view my full portfolio</p> */}
+        <div className="text-center mb-10">
+          <a 
+            href="https://art.selvarajan.in" 
+            target="_blank"
+            className="inline-flex items-center gap-2 text-orange-600 hover:text-orange-700 font-semibold"
+          >
+            View Full Portfolio
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+            </svg>
+          </a>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+          {[
+            {
+              src: "/images/artfolio/01.png",
+              title: "Sunset Dreams",
+              medium: "Digital Art",
+              date: "2024"
+            },
+            {
+              src: "/images/artfolio/02.png", 
+              title: "Urban Rhythm",
+              medium: "Acrylic on Canvas",
+              date: "2023"
+            },
+            {
+              src: "/images/artfolio/03.png",
+              title: "Nature's Whisper",
+              medium: "Watercolor",
+              date: "2023"
+            },
+            {
+              src: "/images/artfolio/04.png",
+              title: "Abstract Flow",
+              medium: "Digital Art",
+              date: "2023"
+            },
+            {
+                src: "/images/artfolio/05.png",
+              title: "Mystic Garden",
+              medium: "Mixed Media",
+              date: "2023"
+            },
+            {
+              src: "/images/artfolio/06.png",
+              title: "Sunset Dreams",
+              medium: "Digital Art",
+              date: "2024"
+            },
+            {
+              src: "/images/artfolio/07.png", 
+              title: "Urban Rhythm",
+              medium: "Acrylic on Canvas",
+              date: "2023"
+            },
+            {
+              src: "/images/artfolio/08.jpg",
+              title: "Nature's Whisper",
+              medium: "Watercolor",
+              date: "2023"
+            },
+            {
+              src: "/images/artfolio/09.png",
+              title: "Abstract Flow",
+              medium: "Digital Art",
+              date: "2023"
+            },
+            {
+                src: "/images/artfolio/10.png",
+              title: "Mystic Garden",
+              medium: "Mixed Media",
+              date: "2023"
+            },
+          ].map((artwork, index) => (
+            <div key={index} className="group">
+              <div className="bg-gray-200 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                <div className="aspect-square overflow-hidden">
+                  <img 
+                    src={artwork.src}
+                    alt={artwork.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                {/* <div className="p-6">
+                  <h3 className="text-xl font-bold group-hover:text-orange-600 transition-colors">
+                    {artwork.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm mt-2">
+                    {artwork.medium} • {artwork.date}
+                  </p>
+                </div> */}
               </div>
             </div>
-          </Link> */}
+          ))}
         </div>
         
       </section>

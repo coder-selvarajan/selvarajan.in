@@ -6,6 +6,7 @@ import TamilLit from './pages/TamilLit';
 import BoardBrain from './pages/BoardBrain';
 import VaiRajaVai from './pages/VaiRajaVai';
 import VocabularyBuddy from './pages/VocabularyBuddy';
+import Artfolio from './pages/Artfolio';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/board-brain" element={<BoardBrain />} />
           <Route path="/vai-raja-vai" element={<VaiRajaVai />} />
           <Route path="/vocabulary-buddy" element={<VocabularyBuddy />} />
+          <Route path="/artfolio" element={<Artfolio />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </div>

@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <main className="max-w-[1024px] mx-auto px-4">
-      <section className="py-20 md:py-24 flex flex-col md:flex-row items-center gap-12">
+      <section className="py-8 md:py-24 flex flex-col md:flex-row items-center gap-12">
         {/* Hero Content */}
-        <div className="w-full md:w-1/2 space-y-6">
+        <div className="w-full md:w-1/2 space-y-6 pl-4">
           <h1 className="text-5xl font-quicksand font-bold leading-tight">
             Hi, I'm <span className="text-orange-600">Selvarajan</span>
           </h1>
@@ -85,14 +85,14 @@ const Home = () => {
           <Link to="/tamil-lit" className="group" onClick={() => window.scrollTo(0, 0)}>
             <div className="bg-gray-200 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full">
               <div className="flex flex-col md:flex-row">
-                <div className="md:w-1/2 px-16 py-14">
+                <div className="md:w-1/2 px-8 md:px-16 py-10 md:py-14">
                   <img 
                     src="/images/tamillit/Tamil-lit-home.png" 
                     alt="Tamil Lit App" 
                     className="w-full object-contain" 
                   />
                 </div>
-                <div className="md:w-1/2 p-10 flex flex-col justify-center">
+                <div className="md:w-1/2 px-6 md:px-16 py-10 md:py-14 flex flex-col justify-center">
                   <h3 className="text-3xl font-bold group-hover:text-orange-600 transition-colors flex items-center justify-between">
                     Tamil Lit
                     <div className="flex gap-1">
@@ -163,8 +163,8 @@ const Home = () => {
                   <h3 className="text-2xl font-bold group-hover:text-orange-600 transition-colors flex items-center justify-between">
                     Vai Raja Vai
                     <div className="flex gap-1">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 fill-gray-400" viewBox="0 0 384 512"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
                       <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 fill-gray-400" viewBox="0 0 448 512"><path d="M89.6 204.5v115.8c0 15.4-12.1 27.7-27.5 27.7-15.3 0-30.1-12.4-30.1-27.7V204.5c0-15.1 14.8-27.5 30.1-27.5 15.1 0 27.5 12.4 27.5 27.5zm10.8 157c0 16.4 13.2 29.6 29.6 29.6h19.9l.3 61.1c0 36.9 55.2 36.6 55.2 0v-61.1h37.2v61.1c0 36.7 55.5 36.8 55.5 0v-61.1h20.2c16.2 0 29.4-13.2 29.4-29.6V182.1H100.4v179.4zm248-189.1H99.3c0-42.8 25.6-80 63.6-99.4l-19.1-35.3c-2.8-4.9 4.3-8 6.7-3.8l19.4 35.6c34.9-15.5 75-14.7 108.3 0L297.5 34c2.5-4.3 9.5-1.1 6.7 3.8L285.1 73c37.7 19.4 63.3 56.6 63.3 99.4zm-170.7-55.5c0-5.7-4.6-10.5-10.5-10.5-5.7 0-10.2 4.8-10.2 10.5s4.6 10.5 10.2 10.5c5.9 0 10.5-4.8 10.5-10.5zm113.4 0c0-5.7-4.6-10.5-10.2-10.5-5.9 0-10.5 4.8-10.5 10.5s4.6 10.5 10.5 10.5c5.6 0 10.2-4.8 10.2-10.5zm94.8 60.1c-15.1 0-27.5 12.1-27.5 27.5v115.8c0 15.4 12.4 27.7 27.5 27.7 15.4 0 30.1-12.4 30.1-27.7V204.5c0-15.4-14.8-27.5-30.1-27.5z"/></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 fill-gray-400" viewBox="0 0 384 512"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
                     </div>
                   </h3>
                   <p className="pb-2">
@@ -204,7 +204,7 @@ const Home = () => {
                   <p className="text-gray-600 pt-2">
                     An iOS app designed for English learners of all levels to improve their vocabulary skills effortlessly.
                     <br/><br/>
-                    <span className="text-sm text-gray-500">Technology: SwiftUI & Core data</span>
+                    <span className="text-sm text-gray-500">Technology: SwiftUI & Core Data</span>
                   </p>
                   <div className="flex items-center gap-4 mt-4">
                     <Link to="/vocabulary-buddy" className="text-sm text-orange-600 hover:text-orange-700">More details →</Link>
@@ -217,22 +217,19 @@ const Home = () => {
         
       </section>
 
-      <section className="py-16">
+      <section className="py-4 md:py-16">
         <h2 className="text-4xl font-quicksand font-bold mb-4 text-center">My Recent Artworks</h2>
         {/* <p className="text-center text-gray-600 mb-12">Goto <a href="https://art.selvarajan.in" target="_blank" className="text-orange-600 hover:text-orange-700">art.selvarajan.in</a> to view my full portfolio</p> */}
         <div className="text-center mb-10">
           <a 
-            href="https://art.selvarajan.in" 
-            target="_blank"
+            href="/#/artfolio" 
+            onClick={() => window.scrollTo(0, 0)}
             className="inline-flex items-center gap-2 text-orange-600 hover:text-orange-700 font-semibold"
           >
-            View Full Portfolio
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-            </svg>
+            View Full Portfolio →
           </a>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {[
             {
               src: "/images/artfolio/01.png",
@@ -295,13 +292,13 @@ const Home = () => {
               date: "2023"
             },
           ].map((artwork, index) => (
-            <div key={index} className="group">
+            <div key={index} className="group cursor-pointer">
               <div className="bg-gray-200 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                 <div className="aspect-square overflow-hidden">
                   <img 
                     src={artwork.src}
                     alt={artwork.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-all duration-300 [filter:grayscale(25%)] group-hover:[filter:grayscale(0%)]"
                   />
                 </div>
                 {/* <div className="p-6">
@@ -318,6 +315,30 @@ const Home = () => {
         </div>
         
       </section>
+
+      <footer className=" border-t border-gray-100 py-8 mt-5">
+        <div className="max-w-[1024px] mx-auto px-4 text-center text-gray-600">
+        
+          <div className="space-y-8">
+            
+            <hr className="my-10 border-gray-300" />
+            <div className="flex justify-center space-x-6">
+              <a href="mailto:selvarajan2006@gmail.com" target='_blank' className="text-gray-600 hover:text-yellow-600">Contact</a>
+              
+              <a href="https://linkedin.com/in/selvarajan-t" className="hover:text-orange-600" target="_blank" rel="noopener noreferrer">
+                <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/selvarajan.t/" className="hover:text-orange-600" target="_blank" rel="noopener noreferrer">
+                <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 };

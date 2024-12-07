@@ -1,5 +1,6 @@
 export const picsDB = [
-    {
+  
+  {
       "img": "23-riya-seyon.png",
       "title": "Riya Seyon",
       "medium": "Digital Art - Procreate",
@@ -8,12 +9,12 @@ export const picsDB = [
       "mode": "landscape"
     },
     {
-      "img": "23-vinayagar.png",
-      "title": "Lord Ganesha",
+      "img": "23-girl-with-dear.png",
+      "title": "Girl with Deer",
       "medium": "Digital Art - Procreate",
       "category": ["digitalart", "featured"],
       "year": 2024,
-      "mode": "portrait"
+      "mode": "landscape"
     },
     {
       "img": "23-bharathanattiyam.png",
@@ -23,14 +24,7 @@ export const picsDB = [
       "year": 2024,
       "mode": "landscape"
     },
-    {
-      "img": "23-buddha.png",
-      "title": "Buddha",
-      "medium": "Digital Art - Procreate",
-      "category": ["digitalart", "featured"],
-      "year": 2024,
-      "mode": "portrait"
-    },
+    
     {
       "img": "23-buddha2.png",
       "title": "Buddha",
@@ -39,6 +33,14 @@ export const picsDB = [
       "year": 2024,
       "mode": "portrait"
     },
+    {
+      "img": "24-rattinam.png",
+      "title": "Ranga Rattinam",
+      "medium": "Digital Art - Procreate",
+      "category": ["digitalart", "featured"],
+      "year": 2024,
+      "mode": "landscape"
+    },  
     {
       "img": "23-cake.png",
       "title": "Cake",
@@ -64,6 +66,14 @@ export const picsDB = [
       "mode": "portrait"
     },
     {
+      "img": "23-buddha.png",
+      "title": "Buddha",
+      "medium": "Digital Art - Procreate",
+      "category": ["digitalart", "featured"],
+      "year": 2024,
+      "mode": "portrait"
+    },
+    {
       "img": "23-gandhiji.png",
       "title": "Gandhiji",
       "medium": "Digital Art - Procreate",
@@ -72,18 +82,26 @@ export const picsDB = [
       "mode": "landscape"
     },
     {
-      "img": "23-girl-with-dear.png",
-      "title": "Girl with Deer",
+      "img": "23-vinayagar.png",
+      "title": "Lord Ganesha",
       "medium": "Digital Art - Procreate",
       "category": ["digitalart", "featured"],
       "year": 2024,
-      "mode": "landscape"
+      "mode": "portrait"
     },
     {
       "img": "23-island-babybuddha.png",
       "title": "Baby Buddha",
       "medium": "Digital Art - Procreate",
       "category": ["digitalart", "featured"],
+      "year": 2024,
+      "mode": "landscape"
+    },
+    {
+      "img": "24-rocks.png",
+      "title": "Stones",
+      "medium": "Digital Art - Procreate",
+      "category": ["digitalart"],
       "year": 2024,
       "mode": "landscape"
     },
@@ -191,7 +209,14 @@ export const picsDB = [
       year: 2023,
       mode: "portrait",
     },
-  
+    {
+      img: "24-temple.png",
+      title: "Temple",
+      medium: "Digital Art - Procreate",
+      category: ["digitalart"],
+      year: 2024,
+      mode: "landscape"
+    },
     {
       img: "22-ricksha-man.png",
       title: "Rickshaw Man",
@@ -208,7 +233,14 @@ export const picsDB = [
       year: 2023,
       mode: "landscape",
     },
-  
+    {
+      img: "24-shop.png",
+      title: "Shop",
+      medium: "Digital Art - Procreate",
+      category: ["digitalart"],
+      year: 2024,
+      mode: "portrait"
+    },
     {
       img: "22-self-portrait.png",
       title: "Self Portrait",
@@ -225,7 +257,22 @@ export const picsDB = [
       year: 2023,
       mode: "portrait",
     },
-  
+    {
+      img: "24-tortaise.png",
+      title: "Tortaise",
+      medium: "Digital Art - Procreate",
+      category: ["digitalart"],
+      year: 2024,
+      mode: "portrait",
+    },
+    {
+      img: "24-man-laughing.png",
+      title: "Man Laughing",
+      medium: "Digital Art - Procreate",
+      category: ["digitalart"],
+      year: 2024,
+      mode: "portrait",
+    },
     {
       img: "21-digitalart-firewood2.jpg",
       title: "Burning Firewood",

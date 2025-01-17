@@ -1,6 +1,13 @@
 export const picsDB = [
-  
-  {
+    {
+      "img": "25-vivekananda.png",
+      "title": "Swami Vivekananda",
+      "medium": "Digital Art - Procreate",
+      "category": ["digitalart", "featured"],
+      "year": 2025,
+      "mode": "landscape"
+    },
+    {
       "img": "23-riya-seyon.png",
       "title": "Riya Seyon",
       "medium": "Digital Art - Procreate",

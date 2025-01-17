@@ -274,6 +274,12 @@ const Home = () => {
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {[
             {
+              src: "/images/artfolio/25-vivekananda-thumbnail.png",
+              title: "Vivekananda",
+              medium: "Digital Art",
+              date: "2025"
+            },
+            {
               src: "/images/artfolio/01.png",
               title: "Sunset Dreams",
               medium: "Digital Art",
@@ -321,12 +327,12 @@ const Home = () => {
               medium: "Watercolor",
               date: "2023"
             },
-            {
-              src: "/images/artfolio/09.png",
-              title: "Abstract Flow",
-              medium: "Digital Art",
-              date: "2023"
-            },
+            // {
+            //   src: "/images/artfolio/09.png",
+            //   title: "Abstract Flow",
+            //   medium: "Digital Art",
+            //   date: "2023"
+            // },
             {
                 src: "/images/artfolio/10.png",
               title: "Mystic Garden",
